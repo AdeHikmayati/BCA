@@ -1,9 +1,9 @@
-{
+{"homepage": "http://adehikmayati.github.io/BCA",
   "name": "ade",
   "proxy": "http://18.211.108.128:3001",
   "secure": false,
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
@@ -42,6 +42,8 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+"deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
