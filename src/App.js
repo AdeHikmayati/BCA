@@ -27,9 +27,9 @@ const App = () => {
       <Route path='/register' component={Register} />
       <Route path='/login' component={Login} />
      
-      {userInfo ? (
+      {/* {userInfo ? (
         <main className='py-3'>
-          <Container>
+          <Container> */}
          
            <Route path='/' component={Home} exact />
             <Route path='/Dashboard' component={Home} exact />
@@ -46,15 +46,15 @@ const App = () => {
           <Route path='/admin/Home' component={DashboardAdmin} exact/>
           <Route path='/admin/kelolapengguna' component={KelolaPengguna} />
           <Route path='/' component={DashboardAdmin} exact /> */}
-          </Container>
+          {/* </Container>
         </main>
       ) :
           (
-            <Container>
-          <Route path='/' component={LP} exact />
+            <Container> */}
+          {/* <Route path='/' component={LP} exact /> */}
               
-              </Container>
-        )}
+              {/* </Container>
+        )} */}
       <Footer />
       </Router>
      

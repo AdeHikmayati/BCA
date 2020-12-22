@@ -42,15 +42,15 @@ const Login = ({ location, history }) => {
            
           </Form.Group>
          
-          {error && <Message variant="danger">{error}</Message>}
-          {loading && <Loader />}
+          {/* {error && <Message variant="danger">{error}</Message>}
+          {loading && <Loader />} */}
           
             <Form.Group controlId="email">
               <Form.Label>Email</Form.Label>
               <Form.Control
-                value={email}
-                required
-                onChange={(e) => setEmail(e.target.value)}
+                // value={email}
+                // required
+                // onChange={(e) => setEmail(e.target.value)}
                 type="email"
                 name="name"
                 placeholder="Email"
@@ -60,9 +60,9 @@ const Login = ({ location, history }) => {
             <Form.Group controlId="password">
               <Form.Label>Password</Form.Label>
               <Form.Control
-                value={password}
-                required
-                onChange={(e) => setPassword(e.target.value)}
+                // value={password}
+                // required
+                // onChange={(e) => setPassword(e.target.value)}
                 type="password"
                 name="password"
                 placeholder="Password"
